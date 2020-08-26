@@ -54,6 +54,10 @@ git config --global user.email "YOUR_ONJA_EMAIL_ADDRESS_HERE"
 
 1. Make Git automatically add tracking branches for new branches with the same name
 
+```
+git config --global push.default current
+```
+
 
 ### Optional configuration
 
@@ -72,7 +76,19 @@ git config --global init.defaultBranch main
 
 - EditorConfig
 - Sass Formatter
+- Prettier
 
+### Install npm globals
+
+```
+npm install -g create-react-app parcel prettier
+```
+
+This will install:
+
+- create-react-app
+- parcel
+- prettier
 
 ## Glossary
 
