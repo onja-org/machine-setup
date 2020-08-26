@@ -81,14 +81,13 @@ git config --global init.defaultBranch main
 ### Install npm globals
 
 ```
-npm install -g create-react-app parcel prettier
+npm install -g create-react-app parcel-bundler
 ```
 
 This will install:
 
 - create-react-app
-- parcel
-- prettier
+- parcel-bundler
 
 ## Glossary
 
