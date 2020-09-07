@@ -4,17 +4,35 @@ Instructions for setting up a new computer.
 
 A glossary has been added below, it includes definitions of troublesome terms.
 
-
-
 ## Operating system
+
+### Get a ready-made drive
+
+We have pre-installed and pre-configured drives available. Use one of those in your machine.
+
+### Restore from an Image
+
+If there are no ready-made drives left, you can restore from an image to a target hard-drive. Check out the [Hard-drive cloning docs](./hard-drive-cloning.md)
 
 ### Installing Windows
 
-TBD
+If for whatever reason you can't clone your disk and you have to resort to installing Windows from scratch, check out our documentation on [Windows installation](./windows-install.md).
+
+## Configuring your machine
+
+Changing your username and password
+
+- Press `Windows Key` + `R` to show the Run dialog
+- Enter 'control'
+- Select the Users and Accounts option
+- Change your current user from 'Student' to your name
+- Change the current user's password to your own password
 
 ## Software
 
 ### Installing necessary software
+
+Take a look in the `C:\Onja Software` folder. It contains some or all of these:
 
 - Antivirus
 - Antispyware
@@ -33,44 +51,9 @@ TBD
 
 - Sourcetree
 
-## Configuration
+## Bash and Git Configuration
 
-1. [Create a new `id_rsa` SSH Key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) in your `~/.ssh/` folder using your Onja email address
-1. [Upload your SSH key to your Github account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-1. Add a `.bash_profile` file to your home directory (`~`) including the following:
-
-```sh
-echo "~/.bash_profile loading…"
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_rsa
-```
-
-1. Add your name and onja email to your git global config
-
-```
-git config --global user.name "YOUR_NAME_HERE"
-git config --global user.email "YOUR_ONJA_EMAIL_ADDRESS_HERE"
-```
-
-1. Make Git automatically add tracking branches for new branches with the same name
-
-```
-git config --global push.default current
-```
-
-
-### Optional configuration
-
-See: [First time Git setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
-
-1. Set your primary git branch names to `main`
-
-```
-git config --global init.defaultBranch main
-```
-
-1. Change your default editor for Git to something like VS Code?
-
+[See the docs on Git & Bash configuration](./git-configuration.md)
 
 ### Install VS Code extensions
 
@@ -94,6 +77,7 @@ This will install:
 Term | Definition
 --- | ---
 ~ | Home directory, usually found in `C:\Users\StudentName`
-SSH Key |  A file used to identify your computer or account in a secure way
-Home directory | See ~ above
+cloning | Making an exact copy of something, in this case, a hard-drive
 git global config | System-wide settings for git, usually stored in `~/.gitconfig`
+Home directory | See ~ above
+SSH Key |  A file used to identify your computer or account in a secure way
