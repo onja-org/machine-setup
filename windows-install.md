@@ -61,6 +61,11 @@ Uninstall Optional features
 - Print and Fax
 - and more?
 
+## Configure Wifi network to download windows updates at night
+
+- First make sure all wifi connections are set to metered. 
+- Follow the [configure Wifi network to download windows updates at night file](./configure-Wifi.md)
+
 
 ## Further configuration
 
