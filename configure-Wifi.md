@@ -21,9 +21,17 @@ Now you can leave your computer overnight and it will download windows updates s
 
 
 
-### Just for reference - how to make your own scheduled task and batch files from scratch
+### Note for network administrators (everyone else please ignore)
 
-Note you do not need to complete this step.
+The batch files are configured to automatically change metered/unmetered settings for the following wifi names:
+"Router Indigo 2.4Ghz"
+"Rainbow access point"
+"Router Blue 2.4Ghz"
+
+If these networks are renamed, or new networks added, the networks need to be added to the batch files. 
+
+
+#### how to make your own scheduled task and batch files from scratch
 
 1. Create batch file as described [here](https://superuser.com/questions/1015438/configure-windows-for-an-internet-connection-thats-only-metered-during-the-day).  Add a line to the batch file used to switch to unmetered as the system only starts downloading updates once a restart is performed: 
 C:\Windows\System32\shutdown.exe /r /t 0
